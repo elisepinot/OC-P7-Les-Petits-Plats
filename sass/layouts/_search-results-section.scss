@@ -1,0 +1,15 @@
+#search-results {
+  margin: 24px 104px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 48px;
+  row-gap: 64px;
+  .no-result-message {
+    display: none;
+    grid-column: span 3;
+    text-align: center;
+    padding-top: 32px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

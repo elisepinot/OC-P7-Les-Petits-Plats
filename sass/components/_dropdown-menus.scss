@@ -1,0 +1,78 @@
+.advanced-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 36px 104px;
+  &__dropdown-menus-section {
+    display: flex;
+    gap: 64px;
+  }
+  &__total-recipes {
+    font-family: Anton, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.dropdown-menus__bloc {
+  position: relative;
+  width: 192px;
+  height: 56px;
+  // height: 315px;
+  border: none;
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 11px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    cursor: pointer;
+  }
+  &__menu {
+    display: none;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 16px;
+  }
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $color-quaternary;
+  border-radius: 2px;
+  height: 36px;
+  padding: 0px 11px;
+  margin-bottom: 16px;
+  &__input {
+    border: none;
+    width: 100%;
+    color: $color-tertiary;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__delete {
+    margin-right: 8px;
+  }
+  &__launch-search {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.list-items {
+  list-style-type: none;
+  overflow-y: auto;
+  max-height: 200px;
+  & li {
+    line-height: 24px;
+  }
+}

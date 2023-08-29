@@ -1,0 +1,65 @@
+header {
+  background-image: url(../assets/illustration1.png);
+  background-size: cover;
+  background-position: center;
+  height: 664px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  top: 48px;
+  left: 64px;
+  width: 200px;
+}
+
+h1 {
+  font-family: $font-titles;
+  color: $color-secundary;
+  font-size: 44px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 240px;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.main-search {
+  width: 64%;
+  height: 72px;
+  border-radius: 11px;
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  &__input {
+    border: none;
+    width: 100%;
+    padding-left: 24px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__delete {
+    align-self: center;
+    margin: 0 24px;
+    cursor: pointer;
+  }
+  &__btn {
+    &--hover {
+      display: none;
+    }
+    &:hover {
+      & .main-search__btn--fixed {
+        display: none;
+      }
+      & .main-search__btn--hover {
+        display: block;
+      }
+    }
+  }
+}
