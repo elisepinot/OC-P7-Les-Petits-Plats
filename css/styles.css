@@ -372,12 +372,26 @@ button {
   padding-top: 17px;
   cursor: pointer;
 }
-.dropdown-menus__bloc__menu {
+.dropdown-menus__bloc__details {
   display: none;
   margin-top: 14px;
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 16px;
+}
+.dropdown-menus__bloc.open .dropdown-menus__bloc__header button img {
+  transform: rotate(180deg);
+}
+
+.dropdown-menus__bloc1.open .dropdown-menus__bloc__header button img,
+.dropdown-menus__bloc2.open .dropdown-menus__bloc__header button img,
+.dropdown-menus__bloc3.open .dropdown-menus__bloc__header button img {
+  transform: rotate(180deg);
+}
+.dropdown-menus__bloc1.visible,
+.dropdown-menus__bloc2.visible,
+.dropdown-menus__bloc3.visible {
+  height: 315px;
 }
 
 .search-box {
@@ -501,6 +515,7 @@ h1 {
   border-radius: 21px;
   position: relative;
   box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.0392156863);
+  display: block;
 }
 .recipe-card__time {
   position: absolute;

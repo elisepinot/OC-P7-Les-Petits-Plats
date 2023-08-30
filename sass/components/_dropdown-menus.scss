@@ -18,13 +18,11 @@
   position: relative;
   width: 192px;
   height: 56px;
-  // height: 315px;
   border: none;
   background-color: white;
   padding-left: 16px;
   padding-right: 16px;
   border-radius: 11px;
-
   &__header {
     display: flex;
     justify-content: space-between;
@@ -32,12 +30,38 @@
     padding-top: 17px;
     cursor: pointer;
   }
-  &__menu {
+  &__details {
     display: none;
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 16px;
+  }
+  &.open {
+    .dropdown-menus__bloc__header {
+      button {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menus__bloc1,
+.dropdown-menus__bloc2,
+.dropdown-menus__bloc3 {
+  &.open {
+    .dropdown-menus__bloc__header {
+      button {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &.visible {
+    height: 315px;
   }
 }
 
