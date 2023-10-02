@@ -6,6 +6,7 @@ export function recipesCards() {
   recipes.forEach((recipe) => {
     const article = document.createElement("article");
     article.classList.add("recipe-card");
+    article.classList.add("visible");
 
     const timeElement = document.createElement("p");
     timeElement.classList.add("recipe-card__time");

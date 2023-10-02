@@ -355,6 +355,12 @@ button {
   font-weight: 400;
 }
 
+.tags-container {
+  display: flex;
+  margin: 36px 104px;
+  column-gap: 24px;
+}
+
 .dropdown-menus__bloc {
   position: relative;
   width: 192px;
@@ -378,9 +384,6 @@ button {
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 16px;
-}
-.dropdown-menus__bloc.open .dropdown-menus__bloc__header button img {
-  transform: rotate(180deg);
 }
 
 .dropdown-menus__bloc1.open .dropdown-menus__bloc__header button img,
@@ -428,6 +431,9 @@ button {
 }
 .list-items li {
   line-height: 24px;
+}
+.list-items li:hover {
+  background-color: #ffd15b;
 }
 
 header {
@@ -515,6 +521,9 @@ h1 {
   border-radius: 21px;
   position: relative;
   box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.0392156863);
+  display: none;
+}
+.recipe-card.visible {
   display: block;
 }
 .recipe-card__time {

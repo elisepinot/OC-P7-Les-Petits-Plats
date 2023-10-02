@@ -14,6 +14,12 @@
   }
 }
 
+.tags-container {
+  display: flex;
+  margin: 36px 104px;
+  column-gap: 24px;
+}
+
 .dropdown-menus__bloc {
   position: relative;
   width: 192px;
@@ -36,15 +42,6 @@
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 16px;
-  }
-  &.open {
-    .dropdown-menus__bloc__header {
-      button {
-        img {
-          transform: rotate(180deg);
-        }
-      }
-    }
   }
 }
 
@@ -98,5 +95,8 @@
   max-height: 200px;
   & li {
     line-height: 24px;
+    &:hover {
+      background-color: $color-secundary;
+    }
   }
 }

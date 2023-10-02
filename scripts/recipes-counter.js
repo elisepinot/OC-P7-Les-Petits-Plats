@@ -1,21 +1,8 @@
-export function totalNumberOfRecipeCards() {
-  const totalRecipes = document.querySelector(
-    ".advanced-search__total-recipes"
-  );
-  const visibleRecipeCards = document.querySelectorAll(".recipe-card");
-  const numberOfVisibleRecipeCards = visibleRecipeCards.length;
-  console.log(numberOfVisibleRecipeCards);
-
-  totalRecipes.innerHTML = `${numberOfVisibleRecipeCards} recettes`;
-}
-
 export function numberOfRecipeCards() {
   const totalRecipes = document.querySelector(
     ".advanced-search__total-recipes"
   );
-  const visibleRecipeCards = document.querySelectorAll(
-    ".recipe-card[style*='display: block']"
-  );
+  const visibleRecipeCards = document.querySelectorAll(".recipe-card.visible");
 
   const numberOfVisibleRecipeCards = visibleRecipeCards.length;
 
