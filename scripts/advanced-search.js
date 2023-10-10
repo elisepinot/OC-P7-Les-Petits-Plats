@@ -308,25 +308,6 @@ export function unifiedFilter() {
   filteredUstensilsList();
 }
 
-//POUR TEST SUR JSBENCH
-// export function unifiedFilter() {
-//   recipes.forEach((recipe) => {
-//     const isTextMatch = checkTextMatch(recipes, "chocolat");
-//     const isTagMatch = checkTagMatch(card, currentFilters.tags);
-
-//     if (isTextMatch && isTagMatch) {
-//       card.classList.add("visible");
-//     } else {
-//       card.classList.remove("visible");
-//     }
-//   });
-
-//   numberOfRecipeCards();
-//   filteredIngredientsList();
-//   filteredAppliancesList();
-//   filteredUstensilsList();
-// }
-
 /*********** Main search field ***********/
 function checkTextMatch(card, searchText) {
   // If searchText is empty or less than 3 characters, we don't apply any filter --> return true so that the card is displayed
