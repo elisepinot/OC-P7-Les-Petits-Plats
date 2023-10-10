@@ -1,6 +1,5 @@
 /*********** Data import ***********/
 import { recipesCards } from "./recipe-card-factory.js";
-import { totalNumberOfRecipeCards } from "./recipes-counter.js";
 import { searchRecipe2 } from "./main-research-algo2.js";
 import { numberOfRecipeCards } from "./recipes-counter.js";
 import { deleteInput } from "./delete-user-input.js";
