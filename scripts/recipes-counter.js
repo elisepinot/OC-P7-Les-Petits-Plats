@@ -1,3 +1,5 @@
+/********** Recipes Cards counter **********/
+//numberOfRecipeCards() counts the number of recipe cards and displays it
 export function numberOfRecipeCards() {
   const totalRecipes = document.querySelector(
     ".advanced-search__total-recipes"
@@ -27,7 +29,7 @@ export function numberOfRecipeCards() {
 }
 
 /********** No result message **********/
-
+//displayMessage() displays the no result message when no recipe card matches the search
 function displayMessage() {
   const noResultMessage = document.querySelector(".no-result-message");
   const searchInput = document.querySelector(".main-search__input").value;

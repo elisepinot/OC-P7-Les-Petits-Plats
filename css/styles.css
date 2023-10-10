@@ -359,6 +359,10 @@ button {
   display: flex;
   margin: 36px 104px;
   column-gap: 24px;
+  row-gap: 24px;
+  flex-wrap: wrap; /* Cette propriété permet aux éléments de passer à la ligne lorsque nécessaire */
+  max-width: 100%; /* Assurez-vous que le conteneur ne dépasse pas la largeur de la page */
+  overflow: hidden;
 }
 
 .dropdown-menus__bloc {
@@ -367,8 +371,6 @@ button {
   height: 56px;
   border: none;
   background-color: white;
-  padding-left: 16px;
-  padding-right: 16px;
   border-radius: 11px;
 }
 .dropdown-menus__bloc__header {
@@ -377,6 +379,8 @@ button {
   align-items: center;
   padding-top: 17px;
   cursor: pointer;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .dropdown-menus__bloc__details {
   display: none;
@@ -386,6 +390,11 @@ button {
   padding-bottom: 16px;
 }
 
+.dropdown-menus__bloc1.open,
+.dropdown-menus__bloc2.open,
+.dropdown-menus__bloc3.open {
+  height: 315px;
+}
 .dropdown-menus__bloc1.open .dropdown-menus__bloc__header button img,
 .dropdown-menus__bloc2.open .dropdown-menus__bloc__header button img,
 .dropdown-menus__bloc3.open .dropdown-menus__bloc__header button img {
@@ -405,7 +414,7 @@ button {
   border-radius: 2px;
   height: 36px;
   padding: 0px 11px;
-  margin-bottom: 16px;
+  margin: 0 16px 16px 16px;
 }
 .search-box__input {
   border: none;
@@ -430,10 +439,28 @@ button {
   max-height: 200px;
 }
 .list-items li {
-  line-height: 24px;
+  line-height: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .list-items li:hover {
   background-color: #ffd15b;
+  cursor: pointer;
+}
+
+.selected-item {
+  background-color: #ffd15b;
+  font-weight: bold;
+}
+
+.filter-tag {
+  display: flex;
+  background-color: #ffd15b;
+  padding: 16px;
+  border-radius: 10px;
+}
+.filter-tag p {
+  margin-right: 48px;
 }
 
 header {

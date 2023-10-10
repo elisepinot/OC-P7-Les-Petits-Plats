@@ -18,6 +18,10 @@
   display: flex;
   margin: 36px 104px;
   column-gap: 24px;
+  row-gap: 24px;
+  flex-wrap: wrap; /* Cette propriété permet aux éléments de passer à la ligne lorsque nécessaire */
+  max-width: 100%; /* Assurez-vous que le conteneur ne dépasse pas la largeur de la page */
+  overflow: hidden;
 }
 
 .dropdown-menus__bloc {
@@ -26,8 +30,6 @@
   height: 56px;
   border: none;
   background-color: white;
-  padding-left: 16px;
-  padding-right: 16px;
   border-radius: 11px;
   &__header {
     display: flex;
@@ -35,6 +37,8 @@
     align-items: center;
     padding-top: 17px;
     cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   &__details {
     display: none;
@@ -49,6 +53,7 @@
 .dropdown-menus__bloc2,
 .dropdown-menus__bloc3 {
   &.open {
+    height: 315px;
     .dropdown-menus__bloc__header {
       button {
         img {
@@ -70,7 +75,7 @@
   border-radius: 2px;
   height: 36px;
   padding: 0px 11px;
-  margin-bottom: 16px;
+  margin: 0 16px 16px 16px;
   &__input {
     border: none;
     width: 100%;
@@ -94,9 +99,27 @@
   overflow-y: auto;
   max-height: 200px;
   & li {
-    line-height: 24px;
+    line-height: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
     &:hover {
       background-color: $color-secundary;
+      cursor: pointer;
     }
+  }
+}
+
+.selected-item {
+  background-color: $color-secundary;
+  font-weight: bold;
+}
+
+.filter-tag {
+  display: flex;
+  background-color: $color-secundary;
+  padding: 16px;
+  border-radius: 10px;
+  & p {
+    margin-right: 48px;
   }
 }

@@ -12,9 +12,6 @@ import { filteredUstensilsList } from "./advanced-search.js";
 export const searchInput = document.querySelector(".main-search__input");
 export const recipeCards = document.querySelectorAll(".recipe-card");
 
-/********** Recipes Cards Creation **********/
-//Fonction appelée dans recipe-card-factory.js sinon bug
-
 /********** Research ***********/
 searchInput.addEventListener("input", searchRecipe1);
 

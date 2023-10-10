@@ -1,4 +1,6 @@
 import { recipes } from "../data/recipes.js";
+/********* Recipes cards factory **********/
+//recipesCards() creates the recipe cards
 
 export function recipesCards() {
   const searchResultsSection = document.getElementById("search-results");
