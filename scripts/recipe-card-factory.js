@@ -1,4 +1,6 @@
 import { recipes } from "../data/recipes.js";
+/********* Recipes cards factory **********/
+//recipesCards() creates the recipe cards
 
 export function recipesCards() {
   const searchResultsSection = document.getElementById("search-results");
@@ -6,6 +8,7 @@ export function recipesCards() {
   recipes.forEach((recipe) => {
     const article = document.createElement("article");
     article.classList.add("recipe-card");
+    article.classList.add("visible");
 
     const timeElement = document.createElement("p");
     timeElement.classList.add("recipe-card__time");

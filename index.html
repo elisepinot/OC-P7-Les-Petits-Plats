@@ -43,25 +43,25 @@
       <main>
         <section class="advanced-search">
           <div class="advanced-search__dropdown-menus-section">
-            <div class="dropdown-menus__bloc">
+            <div class="dropdown-menus__bloc dropdown-menus__bloc1">
               <div class="dropdown-menus__bloc__header">
                 <p>Ingredients</p>
-                <button>
+                <button class="dropdown-button dropdown-button1">
                   <img
                     src="./assets/icons/dropdown-menu-open.svg"
                     alt="Ouvrir ou fermer la liste déroulante"
+                    class="dropwdown-icon"
                   />
-                  <!-- <img
-                    src="./assets/icons/dropdown-menu-close.svg"
-                    alt="Fermer la liste déroulante"
-                  /> -->
                 </button>
               </div>
-              <div class="dropdown-menus__bloc__menu" aria-labelledby="">
+              <div
+                class="dropdown-menus__bloc__details dropdown-menus__bloc__details1"
+                aria-labelledby=""
+              >
                 <div class="search-box">
                   <input
                     type="text"
-                    class="search-box__input"
+                    class="search-box__input search-box__input1"
                     id="searchInput"
                     placeholder="..."
                   />
@@ -73,40 +73,32 @@
                   </button>
                   <div class="search-box__launch-search">
                     <img
-                      class="main-search__btn--fixed"
                       src="./assets/icons/advanced-search-magnigying-glass.svg"
                       alt="Submit research"
                     />
                   </div>
                 </div>
-                <ul class="list-items">
-                  <li>Item 1</li>
-                  <li>Item 2</li>
-                  <li>Item 3</li>
-                  <li>Item 1</li>
-                  <li>Item 2</li>
-                  <li>Item 3</li>
-                  <li>Item 1</li>
-                  <li>Item 2</li>
-                  <li>Item 3</li>
-                </ul>
+                <ul class="list-items"></ul>
               </div>
             </div>
-            <div class="dropdown-menus__bloc">
+            <div class="dropdown-menus__bloc dropdown-menus__bloc2">
               <div class="dropdown-menus__bloc__header">
                 <p>Appareils</p>
-                <button>
+                <button class="dropdown-button dropdown-button2">
                   <img
                     src="./assets/icons/dropdown-menu-open.svg"
                     alt="Ouvrir ou fermer la liste déroulante"
                   />
                 </button>
               </div>
-              <div class="dropdown-menus__bloc__menu" aria-labelledby="">
+              <div
+                class="dropdown-menus__bloc__details dropdown-menus__bloc__details2"
+                aria-labelledby=""
+              >
                 <div class="search-box">
                   <input
                     type="text"
-                    class="search-box__input"
+                    class="search-box__input search-box__input2"
                     id="searchInput"
                     placeholder="..."
                   />
@@ -118,32 +110,32 @@
                   </button>
                   <div class="search-box__launch-search">
                     <img
-                      class="main-search__btn--fixed"
                       src="./assets/icons/advanced-search-magnigying-glass.svg"
                       alt="Submit research"
                     />
                   </div>
                 </div>
-                <ul class="list-items">
-                  <li>Item 1</li>
-                </ul>
+                <ul class="list-items"></ul>
               </div>
             </div>
-            <div class="dropdown-menus__bloc">
+            <div class="dropdown-menus__bloc dropdown-menus__bloc3">
               <div class="dropdown-menus__bloc__header">
                 <p>Ustensiles</p>
-                <button>
+                <button class="dropdown-button dropdown-button3">
                   <img
                     src="./assets/icons/dropdown-menu-open.svg"
                     alt="Ouvrir ou fermer la liste déroulante"
                   />
                 </button>
               </div>
-              <div class="dropdown-menus__bloc__menu" aria-labelledby="">
+              <div
+                class="dropdown-menus__bloc__details dropdown-menus__bloc__details3"
+                aria-labelledby=""
+              >
                 <div class="search-box">
                   <input
                     type="text"
-                    class="search-box__input"
+                    class="search-box__input search-box__input3"
                     id="searchInput"
                     placeholder="..."
                   />
@@ -155,7 +147,6 @@
                   </button>
                   <div class="search-box__launch-search">
                     <img
-                      class="main-search__btn--fixed"
                       src="./assets/icons/advanced-search-magnigying-glass.svg"
                       alt="Submit research"
                     />
@@ -166,17 +157,8 @@
                 </ul>
               </div>
             </div>
-            <!-- <select
-              class="advanced-search__dropdown-menus--ingredients"
-              id="ingredients"
-              name="ingredients"
-            >
-              <option value="" disabled selected>Ingrédients</option>
-            </select> -->
           </div>
-          <p class="advanced-search__total-recipes">
-            <!-- A remplir avec le JS -->
-          </p>
+          <p class="advanced-search__total-recipes"></p>
         </section>
         <p class="tags-container"></p>
 

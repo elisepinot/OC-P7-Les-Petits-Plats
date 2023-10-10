@@ -1,21 +1,10 @@
-export function totalNumberOfRecipeCards() {
-  const totalRecipes = document.querySelector(
-    ".advanced-search__total-recipes"
-  );
-  const visibleRecipeCards = document.querySelectorAll(".recipe-card");
-  const numberOfVisibleRecipeCards = visibleRecipeCards.length;
-  console.log(numberOfVisibleRecipeCards);
-
-  totalRecipes.innerHTML = `${numberOfVisibleRecipeCards} recettes`;
-}
-
+/********** Recipes Cards counter **********/
+//numberOfRecipeCards() counts the number of recipe cards and displays it
 export function numberOfRecipeCards() {
   const totalRecipes = document.querySelector(
     ".advanced-search__total-recipes"
   );
-  const visibleRecipeCards = document.querySelectorAll(
-    ".recipe-card[style*='display: block']"
-  );
+  const visibleRecipeCards = document.querySelectorAll(".recipe-card.visible");
 
   const numberOfVisibleRecipeCards = visibleRecipeCards.length;
 
@@ -40,7 +29,7 @@ export function numberOfRecipeCards() {
 }
 
 /********** No result message **********/
-
+//displayMessage() displays the no result message when no recipe card matches the search
 function displayMessage() {
   const noResultMessage = document.querySelector(".no-result-message");
   const searchInput = document.querySelector(".main-search__input").value;
