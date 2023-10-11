@@ -9,6 +9,10 @@ export function searchRecipe2() {
     currentFilters.searchText = searchInput.value.toLowerCase();
     unifiedFilter();
   }
+  else if (searchInput.value.length <= 2) {
+    currentFilters.searchText = "";
+    unifiedFilter();
+  }
 }
 
 // export function searchRecipe2() {
