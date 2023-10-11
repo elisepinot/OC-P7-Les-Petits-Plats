@@ -288,11 +288,17 @@ export function unifiedFilter() {
   let i = 0;
   while (i < cardArray.length) {
     const card = cardArray[i];
+    // const isTextMatch = checkTextMatch(
+    //   recipeCards[i],
+    //   currentFilters.searchText
+    // );
+    // const isTagMatch = checkTagMatch(recipeCards[i], currentFilters.tags);
+
     const isTextMatch = checkTextMatch(
-      recipeCards[i],
+      cardArray[i],
       currentFilters.searchText
     );
-    const isTagMatch = checkTagMatch(recipeCards[i], currentFilters.tags);
+    const isTagMatch = checkTagMatch(cardArray[i], currentFilters.tags);
 
     if (isTextMatch && isTagMatch) {
       card.classList.add("visible");
