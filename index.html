@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Les Petits Plats - Home</title>
   </head>
   <body>
     <div id="main-container">
       <header>
-        <a><img id="logo" src="./assets/logo.png" alt="Les Petits Plats" /></a>
+        <a><img id="logo" src="./assets/logo.png" alt="Les Petits Plats"></a>
         <h1>
           Cherchez parmi plus de 1500 recettes du quotidien, simples et
           délicieuses
@@ -19,29 +19,29 @@
             class="main-search__input"
             type="text"
             placeholder="Recherche une recette, un ingrédient, ..."
-          />
+        >
           <div class="main-search__delete">
             <img
               src="./assets/icons/main-search-delete.svg"
               alt="Delete search"
-            />
+          >
           </div>
           <button class="main-search__btn">
             <img
               class="main-search__btn--fixed"
               src="./assets/icons/main-search-magnifying-glass-fixed.svg"
               alt="Submit research"
-            />
+          >
             <img
               class="main-search__btn--hover"
               src="./assets/icons/main-search-magnifying-glass-hover.svg"
               alt="Submit research"
-            />
+          >
           </button>
         </form>
       </header>
       <main>
-        <section class="advanced-search">
+        <div class="advanced-search">
           <div class="advanced-search__dropdown-menus-section">
             <div class="dropdown-menus__bloc dropdown-menus__bloc1">
               <div class="dropdown-menus__bloc__header">
@@ -51,31 +51,29 @@
                     src="./assets/icons/dropdown-menu-open.svg"
                     alt="Ouvrir ou fermer la liste déroulante"
                     class="dropwdown-icon"
-                  />
+                >
                 </button>
               </div>
               <div
                 class="dropdown-menus__bloc__details dropdown-menus__bloc__details1"
-                aria-labelledby=""
               >
                 <div class="search-box">
                   <input
                     type="text"
                     class="search-box__input search-box__input1"
-                    id="searchInput"
                     placeholder="..."
-                  />
+                >
                   <button class="search-box__delete">
                     <img
                       src="./assets/icons/advanced-search-delete-search.svg"
                       alt="Delete search"
-                    />
+                  >
                   </button>
                   <div class="search-box__launch-search">
                     <img
                       src="./assets/icons/advanced-search-magnigying-glass.svg"
                       alt="Submit research"
-                    />
+                  >
                   </div>
                 </div>
                 <ul class="list-items"></ul>
@@ -88,31 +86,29 @@
                   <img
                     src="./assets/icons/dropdown-menu-open.svg"
                     alt="Ouvrir ou fermer la liste déroulante"
-                  />
+                >
                 </button>
               </div>
               <div
                 class="dropdown-menus__bloc__details dropdown-menus__bloc__details2"
-                aria-labelledby=""
               >
                 <div class="search-box">
                   <input
                     type="text"
                     class="search-box__input search-box__input2"
-                    id="searchInput"
                     placeholder="..."
-                  />
+                >
                   <button class="search-box__delete">
                     <img
                       src="./assets/icons/advanced-search-delete-search.svg"
                       alt="Delete search"
-                    />
+                  >
                   </button>
                   <div class="search-box__launch-search">
                     <img
                       src="./assets/icons/advanced-search-magnigying-glass.svg"
                       alt="Submit research"
-                    />
+                  >
                   </div>
                 </div>
                 <ul class="list-items"></ul>
@@ -125,31 +121,29 @@
                   <img
                     src="./assets/icons/dropdown-menu-open.svg"
                     alt="Ouvrir ou fermer la liste déroulante"
-                  />
+                >
                 </button>
               </div>
               <div
                 class="dropdown-menus__bloc__details dropdown-menus__bloc__details3"
-                aria-labelledby=""
               >
                 <div class="search-box">
                   <input
                     type="text"
                     class="search-box__input search-box__input3"
-                    id="searchInput"
                     placeholder="..."
-                  />
+                >
                   <button class="search-box__delete">
                     <img
                       src="./assets/icons/advanced-search-delete-search.svg"
                       alt="Delete search"
-                    />
+                  >
                   </button>
                   <div class="search-box__launch-search">
                     <img
                       src="./assets/icons/advanced-search-magnigying-glass.svg"
                       alt="Submit research"
-                    />
+                  >
                   </div>
                 </div>
                 <ul class="list-items">
@@ -159,12 +153,12 @@
             </div>
           </div>
           <p class="advanced-search__total-recipes"></p>
-        </section>
+        </div>
         <p class="tags-container"></p>
 
-        <section id="search-results">
+        <div id="search-results">
           <p class="no-result-message"></p>
-        </section>
+        </div>
       </main>
     </div>
     <script type="module" src="scripts/script.js"></script>
