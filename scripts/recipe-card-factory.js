@@ -18,6 +18,7 @@ export function recipesCards() {
     imageContainer.classList.add("recipe-card__img");
     const recipeImage = document.createElement("img");
     recipeImage.src = `./assets/recipes-illustations/${recipe.image}`;
+    recipeImage.setAttribute('alt', `${recipe.name}`);
     imageContainer.appendChild(recipeImage);
 
     const detailsContainer = document.createElement("div");
