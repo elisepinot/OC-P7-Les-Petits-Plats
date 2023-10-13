@@ -264,7 +264,7 @@ function addingFilter() {
 
 /********** Global search function ***********/
 //unifiedFilter() applies the currentFilters to the recipeCards to display only the cards which match the filters
-export function unifiedFilter() {
+export function unifiedFilter2() {
   recipeCards.forEach((card) => {
     const isTextMatch = checkTextMatch(card, currentFilters.searchText);
     const isTagMatch = checkTagMatch(card, currentFilters.tags);
@@ -282,24 +282,32 @@ export function unifiedFilter() {
   filteredUstensilsList();
 }
 
-//POUR TEST SUR JSBENCH
-// export function unifiedFilter() {
-//   recipes.forEach((recipe) => {
-//     const isTextMatch = checkTextMatch(recipes, "chocolat");
-//     const isTagMatch = checkTagMatch(card, currentFilters.tags);
+export function unifiedFilter() {
+  const cardArray = Array.from(recipeCards); // Convertit la NodeList en tableau
 
-//     if (isTextMatch && isTagMatch) {
-//       card.classList.add("visible");
-//     } else {
-//       card.classList.remove("visible");
-//     }
-//   });
+  let i = 0;
+  while (i < cardArray.length) {
+    const card = cardArray[i];
 
-//   numberOfRecipeCards();
-//   filteredIngredientsList();
-//   filteredAppliancesList();
-//   filteredUstensilsList();
-// }
+    const isTextMatch = checkTextMatch(
+      cardArray[i],
+      currentFilters.searchText
+    );
+    const isTagMatch = checkTagMatch(cardArray[i], currentFilters.tags);
+
+    if (isTextMatch && isTagMatch) {
+      card.classList.add("visible");
+    } else {
+      card.classList.remove("visible");
+    }
+
+    i++;
+  }
+  numberOfRecipeCards();
+  filteredIngredientsList();
+  filteredAppliancesList();
+  filteredUstensilsList();
+}
 
 /*********** Main search field ***********/
 function checkTextMatch(card, searchText) {
