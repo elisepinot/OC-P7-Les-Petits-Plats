@@ -264,7 +264,7 @@ function addingFilter() {
 
 /********** Global search function ***********/
 //unifiedFilter() applies the currentFilters to the recipeCards to display only the cards which match the filters
-export function unifiedFilter2() {
+export function unifiedFilter() {
   recipeCards.forEach((card) => {
     const isTextMatch = checkTextMatch(card, currentFilters.searchText);
     const isTagMatch = checkTagMatch(card, currentFilters.tags);
@@ -276,33 +276,6 @@ export function unifiedFilter2() {
     }
   });
 
-  numberOfRecipeCards();
-  filteredIngredientsList();
-  filteredAppliancesList();
-  filteredUstensilsList();
-}
-
-export function unifiedFilter() {
-  const cardArray = Array.from(recipeCards); // Convertit la NodeList en tableau
-
-  let i = 0;
-  while (i < cardArray.length) {
-    const card = cardArray[i];
-
-    const isTextMatch = checkTextMatch(
-      cardArray[i],
-      currentFilters.searchText
-    );
-    const isTagMatch = checkTagMatch(cardArray[i], currentFilters.tags);
-
-    if (isTextMatch && isTagMatch) {
-      card.classList.add("visible");
-    } else {
-      card.classList.remove("visible");
-    }
-
-    i++;
-  }
   numberOfRecipeCards();
   filteredIngredientsList();
   filteredAppliancesList();
